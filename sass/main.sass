@@ -1,0 +1,49 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400')
+@import "helpers/mixins"
+@import "base/typography"
+@import "components/buttons"
+@import "components/carousel"
+@import "layout/forms"
+
+
+.welcome-wrapper
+  +gradient-bg(70deg, rgba(8, 167, 199, 0.7), rgba(8, 199, 161, 0.8))
+  height: 100vh
+  color: #fff
+  +flexbox
+  flex-direction: column
+  justify-content: center
+  h1
+    font-family: 'Raleway SemiBold', sans-serif
+    +letter-space(.075em)
+
+.days-count
+  +letter-space(.04em)
+  div:first-child
+    font-size: 3.25rem
+    font-family: 'Raleway SemiBold', sans-serif
+  div:last-child
+    font-family: 'Raleway', sans-serif
+    font-weight: normal
+    font-size: 2.5rem
+
+
+
+//video
+//  position: fixed
+//  //left: 0;
+//  bottom: 0
+//  min-width: 100%
+//  min-height: 100%
+//  width: auto
+//  height: auto
+//  object-fit: fill
+//  z-index: 1
+//  opacity: .7
+
+
+
+.home__countdown
+  margin-top: 75px
